@@ -1,6 +1,7 @@
 :root {
   --font-family: "Inter", sans-serif;
   --second-family: "Fraunces", serif;
+  --text: #f4f1e8;
   font-optical-sizing: auto;
   font-size: 16px;
   line-height: 1.5;
