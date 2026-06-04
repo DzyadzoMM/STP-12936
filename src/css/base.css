@@ -1,6 +1,6 @@
 :root {
-  --font-family: "Inter", sans-serif;
-  --second-family: "Fraunces", serif;
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Fraunces', serif;
   --text: #f4f1e8;
   font-optical-sizing: auto;
   font-size: 16px;
@@ -22,7 +22,7 @@ body {
   font-style: normal;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   min-height: 100vh;
   margin: 0;
 }
@@ -30,11 +30,149 @@ body {
 main {
   flex-grow: 1;
 }
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+
+/* .hero-section {
+  min-height: 100vh;
+  background-image: url('../img/bg_home_page/Background-Shape.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+.about-section {
+  min-height: 500px;
+  padding: 80px 0;
+}
+
+.advantages-section {
+  min-height: 500px;
+  padding: 80px 0;
+}
+
+.characters-section {
+  min-height: 500px;
+  padding: 80px 0;
+}
+
+
+.bg-flower-right-1 {
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_right.png');
+  background-repeat: no-repeat;
+  background-position: right -20px center;
+  background-size: 340px auto;
+}
+
+.bg-flower-left {
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_left.png');
+  background-repeat: no-repeat;
+  background-position: left -20px center;
+  background-size: 340px auto;
+}
+
+.bg-flower-right-2 {
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop-bg-right-down.png');
+  background-repeat: no-repeat;
+  background-position: right -20px center;
+  background-size: 340px auto;
+}
+
+
+.bottom-bg-wrapper {
+  position: relative;
+  width: 100%;
+
+
+  background-image:
+    url('../img/bg_home_page/Gemini_Generated_Image_home.png'),
+    url('../img/bg_home_page/Dark-Romance-Arrangement-7-desctop.png');
+  background-repeat: no-repeat, no-repeat;
+
+
+  background-position:
+    right 6% bottom 0,
+    left 4% bottom 0;
+  background-size:
+    auto 640px,
+    auto 380px;
+}
+
+.faq-section {
+  min-height: 500px;
+  padding: 60px 0 20px 0;
+  background: transparent;
+}
+
+.cta-section {
+  min-height: 258px;
+  padding: 20px 0 80px 0;
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    background-image: url('../img/bg_home_page/Background-Shape-mobile.png');
+    background-position: center top;
+    background-size: cover;
+  }
+
+
+  .bg-flower-right-1 {
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-right.png');
+    background-size: 140px auto;
+    background-position: right 0 bottom -20px;
+  }
+
+
+  .bg-flower-left {
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left.png');
+    background-size: 120px auto;
+    background-position: left 0 top 50%;
+  }
+
+  .bg-flower-right-2 {
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left-down.png');
+    background-size: 150px auto;
+    background-position: right 0 bottom 10px;
+  }
+
+  .bg-flower-right-2 {
+    background-image: none;
+    background-color: transparent;
+  }
+
+  .faq-section {
+    padding-top: 100px;
+
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left-down.png');
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 10px;
+    background-size: 180px auto;
+  }
+
+  .bottom-bg-wrapper {
+    background-image: none;
+    background-color: transparent;
+  }
+} */
+
 main:has(.back-link) {
   text-align: center;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--second-family);
   font-style: normal;
-  font-variation-settings: "SOFT" 0, "WONK" 0; 
+  font-variation-settings:
+    'SOFT' 0,
+    'WONK' 0;
 }
