@@ -1,0 +1,101 @@
+.terms-body{
+    background-image: url('../../assets/Dark-Romance-Arrangement-1.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    overflow-x: hidden;
+    text-align: left;
+    color: var(--text);
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+.terms-title,
+.terms-subtitle{
+    font-family: var(--second-family);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
+} 
+.terms-title {
+    font-size: 32px;
+    margin-top: 60px;
+}
+.terms-subtitle{
+    font-size: 13px;
+    margin-top: 16px;
+}
+.terms-date{
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 16px;
+}
+.terms-text{
+    font-size: 14px;
+    line-height: 100%;
+    margin-top: 24px;
+}
+.terms-content-title{
+    font-size: 20px;
+    line-height: 100%;
+    margin-top: 60px;
+    margin-bottom: 16px;
+}
+.terms-content-text{
+    font-size: 14px;
+    line-height: 100%;
+}
+.terms-content-text strong{
+    font-weight: 700; 
+}
+.strong-weight-600{
+    font-weight: 600;
+}
+.domain{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .terms-body {
+    background-image: url('../../assets/Dark-Romance-Arrangement-1.png'),
+                        url('../../assets/Dark-Romance-Arrangement-4.png'),
+                        url('../../assets/Dark-Romance-Arrangement-2.png'),
+                        url('../../assets/Dark-Romance-Arrangement-3.png');
+    background-position: top right, top left, bottom left, bottom right;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 28% auto, 28% auto, 25% auto, 25% auto;
+  }
+  .terms-title,
+  .terms-subtitle{
+    
+    letter-spacing: -0.01em;
+    text-align: center;
+   }
+   .terms-title{
+    line-height: 121%;
+    font-size: 56px;
+   } 
+   .terms-subtitle{
+    line-height: 200%;
+    font-size: 24px;
+   }
+   .terms-date{
+    font-size: 24px;
+    line-height: 200%;
+    letter-spacing: -0.01em;
+   }
+.terms-text{
+    font-size: 20px;
+}
+.terms-content-title{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.terms-content-text{
+    font-size: 20px;
+}
+}
