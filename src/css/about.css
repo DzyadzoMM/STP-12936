@@ -1,0 +1,19 @@
+.about-section {
+  min-height: 500px;
+  padding: 80px 0;
+}
+
+.bg-flower-right-1 {
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_right.png');
+  background-repeat: no-repeat;
+  background-position: right -20px center;
+  background-size: 340px auto;
+}
+
+@media (max-width: 767px) {
+  .bg-flower-right-1 {
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-right.png');
+    background-size: 140px auto;
+    background-position: right 0 bottom -20px;
+  }
+}

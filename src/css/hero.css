@@ -1,0 +1,15 @@
+.hero-section {
+  min-height: 100vh;
+  background-image: url('../img/bg_home_page/Background-Shape.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    background-image: url('../img/bg_home_page/Background-Shape-mobile.png');
+    background-position: center top;
+    background-size: cover;
+  }
+}
