@@ -102,6 +102,11 @@
   font-weight: 500;
 }
 
+.policies-body .back-link a,
+.policies-body a.back-link {
+  text-decoration: none;
+}
+
 @media (max-width: 767px) {
   .policies-body {
     background-image:
