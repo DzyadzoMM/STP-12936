@@ -57,7 +57,6 @@
   font-size: 20px;
   line-height: 1.6;
   color: var(--text);
-  color: var(--text);
   opacity: 0.85;
   text-align: left;
   margin-bottom: 0;
@@ -102,7 +101,12 @@
   font-weight: 500;
 }
 
-@media (max-width: 767px) {
+.policies-body .back-link a,
+.policies-body a.back-link {
+  text-decoration: none;
+}
+
+@media (max-width: 1439px) {
   .policies-body {
     background-image:
       url('../img/bg_policy_page/Dark-Romance-Arrangement-bg-policy-page-up.png'),
@@ -117,7 +121,11 @@
 
   .policies-container {
     /* row-gap: 20px; */
-    padding: 0 20px;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .policies-text + .second-title,
