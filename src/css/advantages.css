@@ -57,6 +57,28 @@
   position: relative;
 }
 
+.advantages-glow {
+  position: absolute;
+  top: -90%;
+  /* top: -600px; */
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translateX(-55%);
+
+  /* width: 1440px;
+  height: 600px; */
+
+  width: 1467px;
+  height: 1000px;
+  background: #0f1409;
+  border-radius: 9999px;
+  box-shadow: 400px 400px 400px rgba(0, 0, 0, 0.5);
+  filter: blur(200px);
+
+  z-index: -1;
+  pointer-events: none;
+}
+
 .advantages-section::after {
   content: '';
   position: absolute;
@@ -69,7 +91,6 @@
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_left.png');
   background-repeat: no-repeat;
   background-size: contain;
-
   /* Шари: */
   z-index: 1;
   pointer-events: none;
@@ -169,6 +190,9 @@
 
 /* АДАПТИВ  */
 @media (max-width: 1439px) {
+  .advantages-glow {
+    display: none;
+  }
   .advantages-section {
     padding: 40px 0;
     background-image: none;
@@ -181,6 +205,7 @@
     left: 0;
     bottom: -135px;
     background-size: contain;
+    /* z-index: 11; */
   }
 
   .advantages-title {
