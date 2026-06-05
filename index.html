@@ -1,128 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/STP-12936/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>STP-12936</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/STP-12936/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12936/assets/styles-DtcJXg-e.css">
+    <link rel="stylesheet" crossorigin href="/STP-12936/assets/styles-DrAiERhs.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/STP-12936/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/STP-12936/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
+    <!-- <header class="header">
+  <div class="container header-container">
+    <a href="#" class="header-logo">
+      <img
+        src="../public/favicon.svg"
+        alt="Queen's Hidden Match Logo"
+        class="logo-img"
+      />
+      <span class="logo-text">Queen's Hidden Match</span>
+    </a>
+    <nav class="header-nav desktop-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link">About the game</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger-menu-btn" aria-label="Open menu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+
+    <div class="mobile-menu-overlay">
+      <button class="close-menu-btn" aria-label="Close menu">&times;</button>
+
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
           <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./privacy-policy.html">Privacy Policy</a>
+            <a href="#" class="nav-link">About the game</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./terms-page.html">Terms of Service</a>
-          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
     </div>
+  </div>
+</header> -->
+
+<header class="header">
+  <div class="container header-container">
+    <a href="#" class="header-logo">
+      <img src="../favicon.svg" alt="Logo" class="logo-img" />
+      <!-- <svg class="icon">
+        <use href="./img/sprite.svg#logo"></use>
+      </svg> -->
+      <span class="logo-text">Queen's Hidden Match</span>
+    </a>
+
+    <div class="menu-wrapper" id="menuWrapper">
+      <button class="close-menu-btn" id="closeMenuBtn" aria-label="Close menu">
+        <svg class="icon">
+          <use href="/STP-12936/assets/sprite-Bsgwf8LU.svg#close"></use>
+        </svg>
+      </button>
+
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link">About the game</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button class="burger-menu-btn" id="burgerMenuBtn" aria-label="Open menu">
+      <svg class="icon">
+        <use href="/STP-12936/assets/sprite-Bsgwf8LU.svg#menu"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
+
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/STP-12936/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
+      <section class="hero-section"></section>
+
+      <section class="about-section bg-flower-right-1">
+  <div class="container"></div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+      <section class="advantages-section bg-flower-left">
+  <div class="container"></div>
+</section>
+
+      <section class="characters-section bg-flower-right-2">
+  <div class="container"></div>
+</section>
+
+      <section class="gallery-section">
+  <div class="container"></div>
+</section>
+
+      <div class="bottom-bg-wrapper">
+  <section class="faq-section">
+    <div class="container"></div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container"></div>
+  </section>
+</div>
 
     </main>
 
