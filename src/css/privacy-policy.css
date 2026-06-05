@@ -1,0 +1,159 @@
+.policies-body {
+  padding: 60px 0 0 0;
+  background-image:
+    url('../../assets/Dark-Romance-Arrangement-1.png'),
+    url('../../assets/Dark-Romance-Arrangement-4.png'),
+    url('../img/bg_home_page/Dark-Romance-Arrangement-7-desctop.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    top right,
+    top left,
+    center bottom;
+  background-size:
+    500px auto,
+    500px auto,
+    650px auto;
+  text-align: left;
+}
+
+.policies-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.policies-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  font-size: 56px;
+  color: var(--text);
+  margin-top: 40px;
+  /* margin-bottom: 20px; */
+  margin-bottom: 40px;
+}
+
+.second-title {
+  font-family: var(--second-family);
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--text);
+  /* margin-bottom: 5px; */
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.policies-text + .second-title,
+.policies-body ul + .second-title {
+  margin-top: 60px;
+}
+
+.policies-text {
+  font-family: var(--font-family);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text);
+  color: var(--text);
+  opacity: 0.85;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.policies-text + .policies-text {
+  margin-top: 15px;
+}
+
+.policies-body ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.policies-body li {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  opacity: 0.85;
+  margin-bottom: 5px;
+}
+
+.policies-body li:last-child {
+  margin-bottom: 0;
+}
+
+.policies-body a {
+  color: var(--text);
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.policies-body a:hover {
+  opacity: 0.7;
+}
+
+.domain {
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .policies-body {
+    background-image:
+      url('../img/bg_policy_page/Dark-Romance-Arrangement-bg-policy-page-up.png'),
+      url('../img/bg_policy_page/Dark-Romance-Arrangement-bg-policy-page-down.png');
+    background-position:
+      top center,
+      center bottom 100px;
+    background-size:
+      340px auto,
+      320px auto;
+  }
+
+  .policies-container {
+    /* row-gap: 20px; */
+    padding: 0 20px;
+  }
+
+  .policies-text + .second-title,
+  .policies-body ul + .second-title {
+    margin-top: 40px;
+  }
+
+  .policies-title {
+    font-size: 32px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .second-title {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .policies-text,
+  .policies-body li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .policies-body ul {
+    padding-left: 20px;
+  }
+}
+
+.policies-body footer ul,
+.policies-body footer ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.policies-body footer a {
+  text-decoration: none;
+}
