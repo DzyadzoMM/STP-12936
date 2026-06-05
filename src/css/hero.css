@@ -6,10 +6,95 @@
   background-size: 100% auto;
 }
 
-@media (max-width: 767px) {
+.hero-mobile-content {
+  display: none;
+}
+
+@media (max-width: 1439px) {
   .hero-section {
     background-image: url('../img/bg_home_page/Background-Shape-mobile.png');
     background-position: center top;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section .container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 100%;
+    /* width: 100%; */
+  }
+
+  .hero-mobile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+    padding: 20px 16px 60px 16px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-mobile-title {
+    color: #f4f1e8;
+    font-size: 36px;
+    font-family: var(--second-family), serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .hero-mobile-text {
+    color: #f4f1e8;
+    font-size: 12px;
+    font-family: var(--font-family), Inter, sans-serif;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    opacity: 0.85;
+    line-height: 30px;
+    word-wrap: break-word;
+    /* max-width: 280px; */
+    margin-bottom: 32px;
+    align-self: stretch;
+  }
+
+  .google-play-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    background-color: #f4f1e8;
+    color: #23311a;
+
+    font-family: var(--font-family), Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 20px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    margin: 0;
+    align-self: center;
+
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+  .google-play-btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+
+  .google-play-btn .icon {
+    width: 24px;
+    height: 24px;
   }
 }

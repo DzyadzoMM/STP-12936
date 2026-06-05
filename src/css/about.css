@@ -1,18 +1,13 @@
 .about-section {
-  /* background-color: #23311a; */
   padding: 80px 0;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .about-section::after {
   content: '';
   position: absolute;
-
-  /* Притискаємо до правого краю та виносимо за нижній край секції */
   right: 50px;
-  bottom: -300px; /* Від'ємне значення дозволяє квітам заходити на секцію Advantages */
-
+  bottom: -300px;
   width: 440px;
   height: 600px;
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_right.png');
@@ -29,7 +24,7 @@
   justify-content: center;
   gap: 134px;
   position: relative;
-  z-index: 2; /* Піднімаємо текст і картинку над фоновими квітами */
+  z-index: 2;
 }
 
 .about-image {
@@ -64,26 +59,24 @@
   opacity: 0.85;
 }
 
-/* ==========================================================================
-   MOBILE ADAPTATION (Екрани до 767px)
-   ========================================================================== */
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   .about-section {
     padding: 40px 0;
+    /* overflow: hidden; */
   }
 
-  /* Перевизначаємо або приховуємо великі десктопні квіти */
   .about-section::after {
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-right.png');
     width: 225px;
     height: 236px;
-    bottom: -100px; /* Менший виліт для мобільних */
+    /* Центруємо або притискаємо до краю в межах мобільного контейнера */
+    right: 0;
+    bottom: -100px;
   }
 
   .about-wrapper {
     flex-direction: column;
     gap: 30px;
-    /* text-align: center; */
   }
 
   .about-image {
