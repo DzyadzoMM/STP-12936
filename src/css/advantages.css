@@ -1,4 +1,4 @@
-.advantages-section {
+/* .advantages-section {
   min-height: 500px;
   padding: 80px 0;
 }
@@ -9,11 +9,212 @@
   background-position: left -20px center;
   background-size: 340px auto;
 }
+.advantages-title {
+  color: var(--text);
+  font-size: 56px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 1.2;
+}
 
-@media (max-width: 767px) {
+.advantages-subtitle {
+  color: var(--text);
+  font-size: 24px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+.advantages-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-list {
+  display: flex;
+}
+
+@media (max-width: 1439px) {
   .bg-flower-left {
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left.png');
     background-size: 120px auto;
     background-position: left 0 top 50%;
+  }
+} */
+
+/* .advantages-section {
+  padding: 80px 0;
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_left.png');
+  background-repeat: no-repeat;
+  background-position: left 10px bottom -20%;
+  background-size: 440px auto;
+} */
+
+.advantages-section {
+  padding: 80px 0;
+  position: relative;
+}
+
+.advantages-section::after {
+  content: '';
+  position: absolute;
+
+  left: 50px;
+  bottom: -130px;
+  width: 480px;
+  height: 480px;
+
+  background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_left.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  /* Шари: */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.advantages-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages-title {
+  color: var(--text);
+  font-size: 56px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.advantages-subtitle {
+  color: var(--text);
+  font-size: 24px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  row-gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.card-item {
+  flex-basis: calc((100% - 48px) / 3);
+  min-width: 320px;
+  height: 306px;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+.card-1 {
+  background-image: url('../img/advantages/advantage-info-laptop.png');
+}
+.card-2 {
+  background-image: url('../img/advantages/advantage-info-laptop-2.png');
+}
+.card-3 {
+  background-image: url('../img/advantages/advantage-info-laptop-3.png');
+}
+.card-4 {
+  background-image: url('../img/advantages/advantage-info-laptop-4.png');
+}
+.card-5 {
+  background-image: url('../img/advantages/advantage-info-laptop-5.png');
+}
+
+.card-content {
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* АДАПТИВ  */
+@media (max-width: 1439px) {
+  .advantages-section {
+    padding: 40px 0;
+    background-image: none;
+  }
+
+  .advantages-section::after {
+    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left.png');
+    width: 215px;
+    height: 204px;
+    left: 0;
+    bottom: -135px;
+    background-size: contain;
+  }
+
+  .advantages-title {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .advantages-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .card-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .card-item {
+    width: 100%;
+    flex-basis: auto;
+    /* height: 320px; */
+    height: 232px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
   }
 }

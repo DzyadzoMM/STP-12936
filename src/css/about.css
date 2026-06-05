@@ -6,9 +6,9 @@
 .about-section::after {
   content: '';
   position: absolute;
-  right: 50px;
-  bottom: -300px;
-  width: 440px;
+  right: 100px;
+  bottom: -350px;
+  width: 580px;
   height: 600px;
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_right.png');
   background-repeat: no-repeat;
@@ -43,17 +43,17 @@
 }
 
 .about-title {
-  color: #f4f1e8;
+  color: var(--text);
   font-size: 56px;
-  font-family: var(--second-family), Fraunces, serif;
+  font-family: var(--second-family);
   font-weight: 400;
   line-height: 1.2;
 }
 
 .about-text {
-  color: #f4f1e8;
+  color: var(--text);
   font-size: 20px;
-  font-family: var(--font-family), Inter, sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.6;
   opacity: 0.85;
@@ -69,8 +69,7 @@
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-right.png');
     width: 225px;
     height: 236px;
-    /* Центруємо або притискаємо до краю в межах мобільного контейнера */
-    right: 0;
+    right: 10%;
     bottom: -100px;
   }
 
