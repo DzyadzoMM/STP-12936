@@ -21,8 +21,9 @@
 .about-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 134px;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* gap: 134px; */
   position: relative;
   z-index: 2;
 }
