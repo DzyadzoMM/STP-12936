@@ -28,4 +28,4 @@ The project was built by a collaborative team of developers and a designer:
 
 * **Developer 1** — Myroslav Dzyadzo—(https://github.com/DzyadzoMM)
 * **Developer 2** — Roman Shovkovych—(https://github.com/rsovkovic)
-* **UI/UX Designer** — Dasha Kraeva [@gonewiththeashes](https://www.figma.com/design/tVdcCD7Z4dZIpLlTIOfpRK/STP-12936---Queen-s-Hidden-Match?node-id=0-1&t=d1i9JJzkFRAlkVis-) — UI/UX design, wireframing, creation of premium visual assets, color palette development, and overall interface aesthetics in Figma.
+* **UI/UX Designer** — Dasha Kraeva—(https://t.me/gonewiththeashes)
