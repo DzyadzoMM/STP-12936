@@ -177,7 +177,9 @@
     background-image: none;
     z-index: 3;
   }
-  .faq-glow {
+
+  /* .*/
+  /* .faq-glow {
     display: block;
     position: absolute;
     top: 10%;
@@ -188,6 +190,26 @@
     border-radius: 9999px;
     box-shadow: 200px 200px 400px rgba(0, 0, 0, 0.6);
     filter: blur(150px);
+    z-index: 1;
+    pointer-events: none;
+  } */
+
+  .faq-glow {
+    display: block;
+    position: absolute;
+    /* Позиціонуй відповідно до макета, наприклад: */
+    top: -10%;
+    /* top: 0; */
+    right: 0;
+
+    width: 791px;
+    height: 697px;
+
+    /* Підключаємо завантажене зображення тіні */
+    background-image: url('../img/bg_home_page/ellipse-shadow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     z-index: 1;
     pointer-events: none;
   }

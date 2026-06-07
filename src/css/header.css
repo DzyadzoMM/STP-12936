@@ -111,9 +111,9 @@
     align-items: center;
     justify-content: center;
 
-    background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-7-desctop.png');
+    background-image: url('../img/bg_home_page/Dark-Romance-burger-bg.png');
     background-repeat: no-repeat;
-    background-position: center bottom 40px;
+    background-position: center bottom 10px;
     background-size: 280px auto;
 
     opacity: 0;
@@ -134,8 +134,8 @@
 
   .nav-list {
     flex-direction: column;
-    gap: 28px;
     text-align: center;
+    margin-bottom: 250px;
   }
 
   .nav-link {
