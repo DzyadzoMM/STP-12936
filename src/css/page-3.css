@@ -69,22 +69,22 @@
   background-size: 480px auto;
   background-attachment: scroll;
 }
-  .terms-body::before {
-    content: '';
-    position: absolute;
-    top: -160px;
-    left: 1800px;
-    margin-left: 500px;
-    width: 450px; 
-    height: 650px; 
-    z-index: -1;
-    pointer-events: none;
-    background-image: url('../../assets/Dark-Romance-Arrangement-1.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: contain;
-    scale: -1 -1; 
-  }
+ .terms-body::before {
+  content: '';
+  position: absolute;
+  top: -160px;
+  left: 50%;           
+  margin-left: 280px;  
+  width: 450px; 
+  height: 650px; 
+  z-index: -1;
+  pointer-events: none;
+  background-image: url('../../assets/Dark-Romance-Arrangement-1.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  scale: -1 -1; 
+}
  .terms-body::after {
     content: '';
     position: absolute;
