@@ -84,6 +84,12 @@
   .slide.swiper-slide {
     border-radius: 20px;
   }
+   .slide img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .slide.swiper-slide:hover img {
+    transform: scale(1.05);
+  }
   .slider-btn {
     position: absolute;
     top: 50%;
