@@ -115,6 +115,7 @@
   }
   .slider-btn.prev {
     left: 15px;
+  }
   .slider-btn.next {
     right: 15px; 
   }
@@ -122,4 +123,3 @@
     bottom: 15px;
   }
   }
-}
