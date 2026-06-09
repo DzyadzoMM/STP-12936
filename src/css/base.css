@@ -46,3 +46,19 @@ h6 {
     'SOFT' 0,
     'WONK' 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id],
+div[id] {
+  scroll-margin-top: 90px;
+}
+
+/* @media (min-width: 1440px) {
+  section[id],
+  div[id] {
+    scroll-margin-top: 90px;
+  }
+} */

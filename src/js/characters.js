@@ -1,6 +1,23 @@
-document.querySelectorAll('.character-card').forEach(card => {
+// document.querySelectorAll('.character-card').forEach(card => {
+//   card.addEventListener('click', () => {
+//     card.classList.toggle('is-flipped');
+//   });
+// });
+
+// document.querySelectorAll('[data-flip-card]').forEach(card => {
+//   card.addEventListener('click', () => {
+//     const isFlipped = card.hasAttribute('data-flipped');
+//     if (isFlipped) {
+//       card.removeAttribute('data-flipped');
+//     } else {
+//       card.setAttribute('data-flipped', '');
+//     }
+//   });
+// });
+
+document.querySelectorAll('[data-flip-card]').forEach(card => {
   card.addEventListener('click', () => {
-    card.classList.toggle('is-flipped');
+    card.toggleAttribute('data-flipped');
   });
 });
 

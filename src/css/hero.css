@@ -1,4 +1,4 @@
-.hero-section {
+/* .hero-section {
   min-height: 100vh;
   background-image: url('../img/bg_home_page/Background-Shape.png');
   background-repeat: no-repeat;
@@ -6,8 +6,41 @@
   background-size: 100% auto;
 }
 
-.hero-mobile-content {
-  display: none;
+.google-play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background-color: #f4f1e8;
+  color: #23311a;
+
+  font-family: var(--font-family), Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+
+  width: 100%;
+  max-width: 320px;
+  padding: 16px 20px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  margin: 0;
+  align-self: center;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.google-play-btn:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+.google-play-btn .icon {
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 1439px) {
@@ -24,7 +57,6 @@
     flex-direction: column;
     flex-grow: 1;
     max-width: 100%;
-    /* width: 100%; */
   }
 
   .hero-mobile-content {
@@ -52,11 +84,9 @@
     font-size: 12px;
     font-family: var(--font-family), Inter, sans-serif;
     font-weight: 400;
-    /* line-height: 1.5; */
     opacity: 0.85;
     line-height: 30px;
     word-wrap: break-word;
-    /* max-width: 280px; */
     margin-bottom: 32px;
     align-self: stretch;
   }
@@ -96,5 +126,120 @@
   .google-play-btn .icon {
     width: 24px;
     height: 24px;
+  }
+} */
+
+.hero-section {
+  min-height: 100vh;
+  background-image: url('../img/bg_home_page/Background-Shape.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .container {
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.hero-title {
+  color: #f4f1e8;
+  font-size: 56px;
+  font-family: var(--second-family), serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  color: #f4f1e8;
+  font-size: 20px;
+  font-family: var(--font-family), Inter, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+.google-play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #f4f1e8;
+  color: #23311a;
+  font-family: var(--font-family), Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  width: auto;
+  min-width: 320px;
+  padding: 18px 32px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.google-play-btn:hover {
+  background-color: #e5e2d8;
+}
+
+.google-play-btn:active {
+  transform: scale(0.98);
+}
+
+.google-play-btn .icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1439px) {
+  .hero-section {
+    background-image: url('../img/bg_home_page/Background-Shape-mobile.png');
+    background-position: center top;
+    background-size: cover;
+    align-items: flex-end;
+  }
+
+  .hero-section .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .hero-content {
+    margin-top: auto;
+    padding: 20px 16px 60px 16px;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .google-play-btn {
+    width: 100%;
+    max-width: 320px;
+    font-size: 16px;
+    padding: 16px 20px;
   }
 }

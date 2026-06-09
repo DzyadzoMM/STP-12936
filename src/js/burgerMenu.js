@@ -10,29 +10,47 @@
 //   burgerMenuEl.dataset.visible = 'close';
 // });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const burgerBtn = document.getElementById('burgerMenuBtn');
+//   const closeBtn = document.getElementById('closeMenuBtn');
+//   const menuWrapper = document.getElementById('menuWrapper');
+//   const navLinks = document.querySelectorAll('.nav-link');
+
+//   burgerBtn.addEventListener('click', () => {
+//     menuWrapper.classList.add('is-open');
+//     document.body.style.overflow = 'hidden';
+//   });
+
+//   closeBtn.addEventListener('click', () => {
+//     menuWrapper.classList.remove('is-open');
+//     document.body.style.overflow = '';
+//   });
+
+//   navLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//       menuWrapper.classList.remove('is-open');
+//       document.body.style.overflow = '';
+//     });
+//   });
+// });
+
 document.addEventListener('DOMContentLoaded', () => {
-  const burgerBtn = document.getElementById('burgerMenuBtn');
-  const closeBtn = document.getElementById('closeMenuBtn');
-  const menuWrapper = document.getElementById('menuWrapper');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const burgerBtn = document.querySelector('[data-burger-toggle]');
+  const closeBtn = document.querySelector('[data-burger-close]');
+  const menuWrapper = document.querySelector('[data-menu-wrapper]');
+  const navLinks = document.querySelectorAll('[data-menu-link]');
 
-  // Відкрити меню
-  burgerBtn.addEventListener('click', () => {
-    menuWrapper.classList.add('is-open');
-    document.body.style.overflow = 'hidden'; /* Блокуємо скрол сайту під меню */
-  });
+  // Функція для керування станом меню
+  const setMenuState = isOpen => {
+    menuWrapper.toggleAttribute('data-open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  };
 
-  // Закрити меню через хрестик
-  closeBtn.addEventListener('click', () => {
-    menuWrapper.classList.remove('is-open');
-    document.body.style.overflow = ''; /* Повертаємо скрол */
-  });
+  // Події
+  burgerBtn.addEventListener('click', () => setMenuState(true));
+  closeBtn.addEventListener('click', () => setMenuState(false));
 
-  // Закривати меню автоматично, якщо клікнули на будь-яке посилання
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      menuWrapper.classList.remove('is-open');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', () => setMenuState(false));
   });
 });

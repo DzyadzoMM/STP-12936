@@ -299,11 +299,15 @@
   background-color: transparent;
 }
 
-.characters-section::after {
+.characters-section .container {
+  position: relative;
+}
+
+.characters-section .container::after {
   content: '';
   position: absolute;
-  bottom: -120px;
-  right: 12%;
+  bottom: -200px;
+  right: 0;
   width: 524px;
   height: 450px;
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop-bg-right-down.png');
@@ -349,7 +353,11 @@
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-.character-card.is-flipped .info-inner {
+/* .character-card.is-flipped .info-inner {
+  transform: rotateY(180deg);
+} */
+
+[data-flip-card][data-flipped] .info-inner {
   transform: rotateY(180deg);
 }
 
@@ -453,7 +461,7 @@
 }
 
 @media (max-width: 1439px) {
-  .characters-section::after {
+  .characters-section .container::after {
     display: none;
   }
 
