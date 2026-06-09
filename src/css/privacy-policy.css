@@ -101,7 +101,9 @@
 }
 
 .policies-body .back-link a,
-.policies-body a.back-link {
+.policies-body a.back-link,
+.policies-body footer a,
+.policies-body .header a {
   text-decoration: none;
 }
 
@@ -160,14 +162,7 @@
   padding-left: 0;
 }
 
-.policies-body footer a {
-  text-decoration: none;
-}
 .policies-body footer {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-}
-
-.policies-body header a {
-  text-decoration: none;
 }
