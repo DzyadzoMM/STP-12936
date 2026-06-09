@@ -3,29 +3,12 @@
   position: relative;
 }
 
-/* .advantages-glow {
-  position: absolute;
-  top: -90%;
-  left: 50%;
-  transform: translateX(-55%);
-  width: 1467px;
-  height: 1000px;
-  background: #0f1409;
-  border-radius: 9999px;
-  box-shadow: 400px 400px 400px rgba(0, 0, 0, 0.5);
-  filter: blur(200px);
-
-  z-index: -1;
-  pointer-events: none;
-} */
-
 .advantages-glow {
   position: absolute;
   top: -85%;
   left: 50%;
   transform: translateX(-55%);
   width: 1467px;
-  /* width: 100%; */
   height: 1000px;
   background-image: url('../img/bg_home_page/ellipse-shadow.png');
   background-repeat: no-repeat;
@@ -35,15 +18,17 @@
   pointer-events: none;
 }
 
-.advantages-section::after {
+.advantages-section .container {
+  position: relative;
+}
+
+.advantages-section .container::after {
   content: '';
   position: absolute;
-
-  left: 20px;
-  bottom: -140px;
+  left: -90px;
+  bottom: -210px;
   width: 480px;
   height: 480px;
-
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-desctop_bg_left.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -96,7 +81,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 30px;
+  padding: 20px 40px;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,14 +136,13 @@
     background-image: none;
   }
 
-  .advantages-section::after {
+  .advantages-section .container::after {
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left.png');
     width: 215px;
     height: 204px;
     left: 0;
-    bottom: -135px;
+    bottom: -180px;
     background-size: contain;
-    /* z-index: 11; */
   }
 
   .advantages-title {
@@ -182,9 +166,7 @@
   .card-item {
     width: 100%;
     flex-basis: auto;
-    /* height: 320px; */
     height: 232px;
-    padding: 20px;
     border-radius: 24px;
   }
 

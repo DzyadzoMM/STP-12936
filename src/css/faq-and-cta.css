@@ -14,11 +14,16 @@
   position: relative;
   z-index: 1;
 }
-.faq-section::before {
+
+.faq-section .container {
+  position: relative;
+}
+
+.faq-section .container::before {
   content: '';
   position: absolute;
-  top: -80px;
-  right: 0;
+  top: -135px;
+  right: -5px;
   width: 248px;
   height: 268px;
   background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-left-down.png');
@@ -175,11 +180,15 @@
   .faq-section::before {
     display: none;
   }
+
+  .faq-section .container::before {
+    display: none;
+  }
   .faq-section {
     padding: 60px 0 20px 0;
     background-image: none;
     z-index: 3;
-    display: block; 
+    display: block;
   }
   .faq-section .container {
     display: flex;
@@ -201,13 +210,13 @@
     background-size: contain;
     pointer-events: none;
   }
-  .bottom-bg-wrapper::after {
+  .bottom-bg-wrapper .container::after {
     content: '';
     position: absolute;
     z-index: 1;
-    left: 50%;
-    margin-left: -820px; 
-    bottom: -165px;
+    left: -9%;
+    /* margin-left: -820px; */
+    bottom: -545px;
     width: 795px;
     height: 790px;
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-7-desctop.png');
@@ -236,10 +245,10 @@
     line-height: 100%;
     letter-spacing: -0.01em;
     text-align: center;
-    width: 100%; 
+    width: 100%;
   }
   .faq-container {
-    margin-left: 0; 
+    margin-left: 0;
     margin-right: auto;
     max-width: 635px;
     gap: 24px;
