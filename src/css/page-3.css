@@ -8,6 +8,7 @@
     color: var(--text);
     font-family: var(--font-family);
     font-weight: 400;
+    margin-top:100px ;
 }
 .terms-title,
 .terms-subtitle{
