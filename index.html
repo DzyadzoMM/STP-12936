@@ -15,58 +15,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     
     <script type="module" crossorigin src="/STP-12936/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12936/assets/styles-BZ6-KM4Y.css">
+    <link rel="stylesheet" crossorigin href="/STP-12936/assets/styles-B7rR9b23.css">
   </head>
   <body>
-    <!-- <header class="header">
-  <div class="container header-container">
-    <a href="#" class="header-logo">
-      <img
-        src="../public/favicon.svg"
-        alt="Queen's Hidden Match Logo"
-        class="logo-img"
-      />
-      <span class="logo-text">Queen's Hidden Match</span>
-    </a>
-    <nav class="header-nav desktop-nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#" class="nav-link">About the game</a>
-        </li>
-        <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      </ul>
-    </nav>
-
-    <button class="burger-menu-btn" aria-label="Open menu">
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-      <span class="burger-line"></span>
-    </button>
-
-    <div class="mobile-menu-overlay">
-      <button class="close-menu-btn" aria-label="Close menu">&times;</button>
-
-      <nav class="mobile-nav">
-        <ul class="mobile-nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-link">About the game</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Advantages</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Characters</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header> -->
-
-<header class="header">
+    <header class="header">
   <div class="container header-container">
     <a href="#" class="header-logo">
       <img src="./favicon.svg" alt="Logo" class="logo-img" />
@@ -76,8 +28,8 @@
       <span class="logo-text">Queen's Hidden Match</span>
     </a>
 
-    <div class="menu-wrapper" id="menuWrapper">
-      <button class="close-menu-btn" id="closeMenuBtn" aria-label="Close menu">
+    <div class="menu-wrapper" data-menu-wrapper>
+      <button class="close-menu-btn" aria-label="Close menu" data-burger-close>
         <svg class="icon">
           <use href="/STP-12936/assets/sprite-Bsgwf8LU.svg#close"></use>
         </svg>
@@ -86,24 +38,28 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="#about" class="nav-link">About the game</a>
+            <a href="#about" class="nav-link" data-menu-link>About the game</a>
           </li>
           <li class="nav-item">
-            <a href="#advantages" class="nav-link">Advantages</a>
+            <a href="#advantages" class="nav-link" data-menu-link>Advantages</a>
           </li>
           <li class="nav-item">
-            <a href="#characters" class="nav-link">Characters</a>
+            <a href="#characters" class="nav-link" data-menu-link>Characters</a>
           </li>
           <li class="nav-item">
-            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#gallery" class="nav-link" data-menu-link>Gallery</a>
           </li>
-          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link" data-menu-link>FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-menu-link>Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
 
-    <button class="burger-menu-btn" id="burgerMenuBtn" aria-label="Open menu">
+    <button class="burger-menu-btn" aria-label="Open menu" data-burger-toggle>
       <svg class="icon">
         <use href="/STP-12936/assets/sprite-Bsgwf8LU.svg#menu"></use>
       </svg>
@@ -113,13 +69,35 @@
 
 
     <main>
-      <section class="hero-section">
+      <!-- <section class="hero-section">
   <div class="container">
     <div class="hero-mobile-content">
       <h1 class="hero-mobile-title">Find Secrets.<br />Match Elegance.</h1>
       <p class="hero-mobile-text">
         Hidden object adventures inside a magical royal
         <br />world.
+      </p>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.messworks.queen.merge.match.hidden.object.game&hl=en&gl=us"
+        class="google-play-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="icon">
+          <use href="./img/sprite.svg#google-play"></use>
+        </svg>
+        Play on Google Play
+      </a>
+    </div>
+  </div>
+</section> -->
+
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Find Secrets.<br />Match Elegance.</h1>
+      <p class="hero-text">
+        Hidden object adventures inside a magical royal world.
       </p>
       <a
         href="https://play.google.com/store/apps/details?id=com.messworks.queen.merge.match.hidden.object.game&hl=en&gl=us"
@@ -372,7 +350,7 @@
     <div class="characters-wrapper">
       <h2 class="characters-title">Characters</h2>
       <ul class="characters-list">
-        <li class="character-card">
+        <li class="character-card" data-flip-card>
           <div class="character-img-wrapper">
             <img
               src="/STP-12936/assets/Character_Image_1-CXeJMFQ4.png"
@@ -396,7 +374,7 @@
           </div>
         </li>
 
-        <li class="character-card">
+        <li class="character-card" data-flip-card>
           <div class="character-img-wrapper">
             <img
               src="/STP-12936/assets/Character_Image_2-BWadTDqZ.png"
@@ -420,7 +398,7 @@
           </div>
         </li>
 
-        <li class="character-card">
+        <li class="character-card" data-flip-card>
           <div class="character-img-wrapper">
             <img
               src="/STP-12936/assets/Character_Image_3-CuW0ZOvZ.png"
@@ -443,7 +421,7 @@
           </div>
         </li>
 
-        <li class="character-card">
+        <li class="character-card" data-flip-card>
           <div class="character-img-wrapper">
             <img
               src="/STP-12936/assets/Character_Image_4-r80pG6R8.png"
@@ -574,25 +552,31 @@
 </div>
     </main>
 
-    <footer class="footer-page">
-  <div class="container footer-container"> 
+    <footer id="contact" class="footer-page">
+  <div class="container footer-container">
     <div class="footer-left-block">
-        <p class="footer-page-title">Queen's Hidden Match</p>
-        <a href="mailto:info@coreplain.online" class="footer-page-mail-link">
-            <span>info@coreplain.online</span>
-        </a>
+      <p class="footer-page-title">Queen's Hidden Match</p>
+      <a href="mailto:info@coreplain.online" class="footer-page-mail-link">
+        <span>info@coreplain.online</span>
+      </a>
     </div>
 
     <ul class="footer-page-nav-list">
-        <li class="footer-page-nav-item">
-            <a class="footer-page-nav-link" href="./privacy-policy.html">Privacy Policy</a>
-        </li>
-        <li class="footer-page-nav-item">
-            <a class="footer-page-nav-link" href="./terms-page.html">Terms of Service</a>
-        </li>
+      <li class="footer-page-nav-item">
+        <a class="footer-page-nav-link" href="./privacy-policy.html"
+          >Privacy Policy</a
+        >
+      </li>
+      <li class="footer-page-nav-item">
+        <a class="footer-page-nav-link" href="./terms-page.html"
+          >Terms of Service</a
+        >
+      </li>
     </ul>
-    
-    <p class="footer-page-copyright">© 2026 coreplain.online — All rights reserved.</p>
+
+    <p class="footer-page-copyright">
+      © 2026 coreplain.online — All rights reserved.
+    </p>
   </div>
 </footer>
 
