@@ -69,7 +69,8 @@
   background-size: 480px auto;
   background-attachment: scroll;
 }
- .terms-body::before {
+  .terms-body::before {
+
   content: '';
   position: absolute;
   top: -160px;

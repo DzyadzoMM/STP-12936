@@ -1,6 +1,7 @@
 .gallery-section {
   min-height: 343px;
   background: transparent;
+  margin-top: 40px;
 }
 .gallery-title {
   font-family: var(--second-family);
@@ -10,7 +11,7 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--text);
-  padding-bottom: 24px;
+  padding-bottom: 14px;
 }
 .slider-container.swiper {
   position: relative;
@@ -84,7 +85,7 @@
   .slide.swiper-slide {
     border-radius: 20px;
   }
-   .slide img {
+    .slide img {
     transition: transform 0.3s ease-in-out;
   }
   .slide.swiper-slide:hover img {

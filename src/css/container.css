@@ -1,14 +1,20 @@
-/* Styles for Mobile devices */
+* {
+  box-sizing: border-box;
+}
 .container {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
 }
-
-/* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
   }
 }
+
+  
