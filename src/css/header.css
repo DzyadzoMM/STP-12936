@@ -125,12 +125,6 @@
       transform 0.3s ease;
   }
 
-  /*  JS  */
-  /* .menu-wrapper.is-open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  } */
   [data-menu-wrapper][data-open] {
     opacity: 1;
     visibility: visible;

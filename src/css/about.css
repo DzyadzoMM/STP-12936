@@ -10,8 +10,6 @@
 .about-section .container::after {
   content: '';
   position: absolute;
-  /* right: 30px; */
-  /* right: 0; */
   right: -50px;
   bottom: -420px;
   width: 580px;
@@ -27,9 +25,7 @@
 .about-wrapper {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-between;
-  /* gap: 134px; */
   position: relative;
   z-index: 2;
 }
@@ -76,7 +72,6 @@
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-mobile-bg-right.png');
     width: 225px;
     height: 236px;
-    /* right: 10%; */
     right: 0;
     bottom: -160px;
   }

@@ -148,6 +148,7 @@
   .advantages-title {
     font-size: 32px;
     margin-bottom: 8px;
+    z-index: 1;
   }
 
   .advantages-subtitle {
