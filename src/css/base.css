@@ -16,7 +16,13 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 body {
   font-family: var(--font-family);
   font-style: normal;
@@ -56,9 +62,4 @@ div[id] {
   scroll-margin-top: 90px;
 }
 
-/* @media (min-width: 1440px) {
-  section[id],
-  div[id] {
-    scroll-margin-top: 90px;
-  }
-} */
+
