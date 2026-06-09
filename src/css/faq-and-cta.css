@@ -190,7 +190,7 @@
   .faq-section {
     padding: 40px 0 20px 0;
     background-image: none;
-    z-index: 3;
+    z-index: 0;
     display: block;
   }
   .faq-section .container {
@@ -234,8 +234,8 @@
     z-index: 1;
     left: -9%;
     bottom: -545px;
-    width: 795px;
-    height: 790px;
+    width: 650px;
+    height: 690px;
     background-image: url('../img/bg_home_page/Dark-Romance-Arrangement-7-desctop.png');
     background-repeat: no-repeat;
     background-position: center bottom;
